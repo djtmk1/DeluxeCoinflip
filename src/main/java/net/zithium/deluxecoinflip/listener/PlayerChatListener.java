@@ -39,7 +39,8 @@ public class PlayerChatListener implements Listener {
             return;
         }
 
-        if (event.getMessage().trim().equalsIgnoreCase("cancel")) {
+        String message = event.getMessage().trim();
+        if (message.equalsIgnoreCase("cancel") || message.toLowerCase().contains("cancel")) {
             event.setCancelled(true);
             plugin.getListenerCache().invalidate(uuid);
             Messages.CHAT_CANCELLED.send(player);

@@ -1,10 +1,10 @@
 plugins {
     id("java")
-    id("com.gradleup.shadow") version "8.3.6"
+    id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
 group = "net.zithium"
-version = "2.9.6"
+version = "2.9.7"
 description = "DeluxeCoinflip"
 
 repositories {
